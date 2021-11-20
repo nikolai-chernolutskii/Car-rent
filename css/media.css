@@ -1,0 +1,259 @@
+
+@media (max-width: 1250px) {
+    .benefits__images {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1140px) {
+    .rent__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .rent__content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .benefits__items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }    
+    .benefits__content {
+        /* !!! */
+        min-width: 100%;
+        margin-top: 30px;
+    }
+
+    .benefits__text + .benefits__text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .top__heading {
+        display: block;
+    }
+
+    .top__content, .top__slider {
+        width: 100%;
+    }
+    
+    .top__slider-images {
+        margin: 0 auto;
+    }
+
+    .top__content {
+        padding-top: 30px;
+    }
+
+    .top__bottom {
+        display: block;
+    }
+
+    .top__items {
+        width: 100%;
+    }
+
+    .top__links {
+        padding-right: 0;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 920px) {
+    .rent__item {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 870px) {
+    /* To minimize the footer in the mobile version we remove the menu */
+    .footer .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .menu {
+        order: 1;
+    }
+    
+    .menu__btn {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        border: none;
+        border-top: 2px solid #fefefe;
+        border-bottom: 2px solid #fefefe;
+        background-color: transparent;
+        position: relative;
+        outline: none;
+    }
+
+    .menu__btn::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fefefe;
+        left: 0;
+        top: 10px;
+    }
+    
+    .menu__list {
+        /* display: block; */
+        display: none;
+        position: absolute;
+        top: 100px;
+        /* To spread the block to the whole screen length we use the 2 rules below */
+        left: 0;
+        right: 0;
+        background-color: #332208;
+        text-align: center;
+        padding-bottom: 20px;
+        /* hiding the menu list - see the rule below */
+        /* transform: translateY(-450px); */
+        /* to make the menu list appear and disappear more smoothly */
+        /* transition: all .5s; */
+        
+    }
+
+    /* .menu__list.menu__list--active {
+        transform: translateY(0px);
+    } */
+
+    .menu__list-link {
+        /* As the default value for list items is display:inline, we use the rule below */
+        display: block;
+        padding: 20px 0;
+    }
+
+    .menu__list-link:hover {
+        border-bottom: none;
+    }
+
+    .top__text {
+        padding-bottom: 60px;
+        transition: all .5s;
+    }
+
+    .top__text--disabled {
+        color: transparent;
+    }
+
+    .reviews__title {
+        text-align: center;
+    }
+
+    .feedback__images {
+        display: none;
+    }
+
+    .footer,
+    .feedback,
+    .reviews,
+    .benefits,
+    .rent {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .rent__content {
+        text-align: center;
+    }    
+    .rent__item {
+        width: 100%;
+        min-height: 245px;
+    }
+    .rent__item-title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .benefits__images {
+        width: 70%;
+    }
+
+    .benefits__list {
+        min-width: 100%;
+    }
+
+    .benefits__list-item {
+        margin-right: 0;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 26px;
+    }
+
+    .benefits__list-item:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .benefits__list-item::after {
+        right: auto;
+        left: 0;
+    }
+
+@media (max-width: 525px) {
+    .top__items {
+        flex-wrap: wrap;
+    }
+    .top__item {
+        margin: 20px;
+    }
+    .top__slider-text {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .video-popup,
+    .feedback__btn {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .footer__inner {
+        flex-direction: column;
+    }
+    .footer .phone {
+        margin-top: 30px;   
+    }
+}
+
+@media (max-width: 400px) {
+    .top__item {
+        width: 100%;
+    }
+    .top__links {
+        text-align: center;
+    }
+    .top__link {
+        display: inline-block;
+        margin: 10px 15px;
+    }
+
+    .top__slider-text {
+        text-align: right;
+    }
+    .top__slider-text span {
+        display: block;
+        margin: 10px 0;
+    }
+    .rent__item {
+        margin: 30px 0;
+    }
+}
+
+@media (min-width: 861px) {
+    .menu__list {
+        display: flex !important;
+    }
+}
